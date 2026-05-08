@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ໂປຣໂມຊັນ – KickZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+  *{
+    font-family: 'phetsarath oT', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="logo-text">KICK<span class="logo-accent">ZONE</span></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-white fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>ໜ້າຫຼັກ</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html"><i class="bi bi-grid-fill me-1"></i>ສິນຄ້າ</a></li>
+        <li class="nav-item"><a class="nav-link active" href="promotion.html"><i class="bi bi-tags-fill me-1"></i>ໂປຣໂມຊັນ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-telephone-fill me-1"></i>ຕິດຕໍ່</a></li>
+        <li class="nav-item"><a class="nav-link cart-icon" href="#"><i class="bi bi-bag-fill"></i><span class="cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header promo-page-header">
+  <div class="container text-center">
+    <p class="hero-sub mb-2">🔥 ດ່ວນ! ຈຳກັດເວລາ</p>
+    <h1 class="page-title">ໂປຣໂມຊັນພິເສດ</h1>
+    <p class="page-breadcrumb"><a href="index.html">ໜ້າຫຼັກ</a> / ໂປຣໂມຊັນ</p>
+  </div>
+</div>
+
+<!-- PROMO CODES -->
+<section class="section-pad">
+  <div class="container">
+    <h2 class="section-title">ໂຄດສ່ວນລົດ</h2>
+    <p class="section-sub">ສຳເນົາໂຄດ ແລ້ວໃຊ້ເວລາຊຳລະ</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="coupon-card">
+          <div class="coupon-left">
+            <span class="coupon-pct">30%</span>
+            <span class="coupon-off">OFF</span>
+          </div>
+          <div class="coupon-right">
+            <h5>ສ່ວນລົດທຸກສິນຄ້າ</h5>
+            <p>ສຳລັບການຊື້ຂັ້ນຕ່ຳ 500,000 ກີບ</p>
+            <div class="coupon-code-box">
+              <span id="code1">KICK30</span>
+              <button onclick="copyCode('code1')" class="copy-btn"><i class="bi bi-clipboard"></i> ສຳເນົາ</button>
+            </div>
+            <small class="text-muted">ໝົດອາຍຸ: 31 ພ.ພ. 2026</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="coupon-card gold">
+          <div class="coupon-left">
+            <span class="coupon-pct">50%</span>
+            <span class="coupon-off">OFF</span>
+          </div>
+          <div class="coupon-right">
+            <h5>ຟ້ລາຊ໌ເຊລ 24 ຊ.ມ.</h5>
+            <p>ສຳລັບເກີບ Nike ທຸກລາຍການ</p>
+            <div class="coupon-code-box">
+              <span id="code2">NIKE50</span>
+              <button onclick="copyCode('code2')" class="copy-btn"><i class="bi bi-clipboard"></i> ສຳເນົາ</button>
+            </div>
+            <small class="text-muted">ໝົດອາຍຸ: 10 ພ.ພ. 2026</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="coupon-card green">
+          <div class="coupon-left">
+            <span class="coupon-pct">ຟຣີ</span>
+            <span class="coupon-off">ສົ່ງ</span>
+          </div>
+          <div class="coupon-right">
+            <h5>ຈັດສົ່ງຟຣີ ວຽງຈັນ</h5>
+            <p>ສຳລັບທຸກການຊື້ ບໍ່ຈຳກັດຈຳນວນ</p>
+            <div class="coupon-code-box">
+              <span id="code3">FREESHIP</span>
+              <button onclick="copyCode('code3')" class="copy-btn"><i class="bi bi-clipboard"></i> ສຳເນົາ</button>
+            </div>
+            <small class="text-muted">ໝົດອາຍຸ: 30 ມ.ຖ. 2026</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLASH SALE -->
+<section class="section-pad bg-dark-section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+      <div>
+        <h2 class="section-title mb-1">⚡ Flash Sale</h2>
+        <p class="section-sub mb-0">ລາຄາດຸ ຈຳນວນຈຳກັດ!</p>
+      </div>
+      <div class="countdown-inline">
+        <div class="cd-item"><span id="fs-h">12</span><small>ຊ.ມ</small></div>:
+        <div class="cd-item"><span id="fs-m">45</span><small>ນທ</small></div>:
+        <div class="cd-item"><span id="fs-s">00</span><small>ວນ</small></div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card flash">
+          <div class="product-badge sale">-50%</div>
+          <div class="flash-bar" style="width:70%"></div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt=""/>
+            <div class="product-actions">
+              <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Nike</span>
+            <h6 class="product-name">Air Force 1</h6>
+            <div class="product-price">
+              <span class="price-old">1,200,000 ກີບ</span>
+              <span class="price-now">600,000 ກີບ</span>
+            </div>
+            <div class="stock-bar"><div class="stock-fill" style="width:70%"></div></div>
+            <small class="text-muted">ເຫຼືອ 7 ຄູ່</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card flash">
+          <div class="product-badge sale">-40%</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&q=80" alt=""/>
+            <div class="product-actions">
+              <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Adidas</span>
+            <h6 class="product-name">NMD R1</h6>
+            <div class="product-price">
+              <span class="price-old">1,400,000 ກີບ</span>
+              <span class="price-now">840,000 ກີບ</span>
+            </div>
+            <div class="stock-bar"><div class="stock-fill" style="width:40%"></div></div>
+            <small class="text-muted">ເຫຼືອ 4 ຄູ່</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card flash">
+          <div class="product-badge sale">-35%</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&q=80" alt=""/>
+            <div class="product-actions">
+              <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Puma</span>
+            <h6 class="product-name">Suede Classic</h6>
+            <div class="product-price">
+              <span class="price-old">700,000 ກີບ</span>
+              <span class="price-now">455,000 ກີບ</span>
+            </div>
+            <div class="stock-bar"><div class="stock-fill warning" style="width:20%"></div></div>
+            <small class="text-muted">ເຫຼືອ 2 ຄູ່</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="product-card flash">
+          <div class="product-badge sale">-30%</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80" alt=""/>
+            <div class="product-actions">
+              <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Converse</span>
+            <h6 class="product-name">Chuck Taylor All Star</h6>
+            <div class="product-price">
+              <span class="price-old">550,000 ກີບ</span>
+              <span class="price-now">385,000 ກີບ</span>
+            </div>
+            <div class="stock-bar"><div class="stock-fill" style="width:55%"></div></div>
+            <small class="text-muted">ເຫຼືອ 10 ຄູ່</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BUNDLE DEALS -->
+<section class="section-pad">
+  <div class="container">
+    <h2 class="section-title">ຊື້ຄູ່ ປະຢັດກວ່າ</h2>
+    <p class="section-sub">ຊື້ 2 ຄູ່ ຮັບສ່ວນລົດພິເສດ</p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="bundle-card">
+          <div class="bundle-tag">ຍອດນິຍົມ</div>
+          <h4>ຊື້ 2 ຄູ່</h4>
+          <p class="bundle-pct">ລົດ <span>15%</span></p>
+          <p>ສຳລັບສິນຄ້າທຸກໝວດ ບໍ່ຈຳກັດລາຄາ</p>
+          <a href="products.html" class="btn btn-primary-custom">ເລືອກສິນຄ້າ</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bundle-card gold-bundle">
+          <div class="bundle-tag">ດີທີ່ສຸດ</div>
+          <h4>ຊື້ 3 ຄູ່ ຂຶ້ນໄປ</h4>
+          <p class="bundle-pct">ລົດ <span>25%</span></p>
+          <p>ສຳລັບສິນຄ້າທຸກໝວດ + ຟຣີຖົງຫີ້ວ KickZone</p>
+          <a href="products.html" class="btn btn-primary-custom">ເລືອກສິນຄ້າ</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="logo-text mb-3">KICK<span class="logo-accent">ZONE</span></div>
+        <p class="footer-desc">ຮ້ານເກີບຄຸນນະພາບສູງ ຢູ່ວຽງຈັນ ພ້ອມບໍລິການດ້ວຍໃຈ ທຸກວັນ.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h6 class="footer-heading">ລິ້ງ</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">ໜ້າຫຼັກ</a></li>
+          <li><a href="products.html">ສິນຄ້າ</a></li>
+          <li><a href="promotion.html">ໂປຣໂມຊັນ</a></li>
+          <li><a href="contact.html">ຕິດຕໍ່</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຂໍ້ມູນ</h6>
+        <ul class="footer-links">
+          <li><a href="#">ນະໂຍບາຍຄືນສິນຄ້າ</a></li>
+          <li><a href="#">ຂໍ້ກຳນົດການໃຊ້ງານ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຕິດຕໍ່ດ່ວນ</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-telephone me-2"></i>020 9962 9048</li>
+          <li><i class="bi bi-envelope me-2"></i>mbivong4@gamil.com</li>
+          <li><i class="bi bi-geo-alt me-2"></i>ຖະໜົນທ່າເດື່ອ, ວຽງຈັນ</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr"/>
+    <p class="footer-copy">JACK👌✔️. ສະຫງວນລິຂະສິດທຸກຢ່າງ.</p>
+  </div>
+</footer>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cartToast" class="toast align-items-center" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-bag-check-fill me-2 text-success"></i>ເພີ່ມສິນຄ້າໃສ່ກະຕ່າແລ້ວ!</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+function copyCode(id) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector(`[onclick="copyCode('${id}')"]`);
+    btn.innerHTML = '<i class="bi bi-clipboard-check"></i> ສຳເນົາແລ້ວ!';
+    btn.style.background = '#22c55e';
+    setTimeout(() => {
+      btn.innerHTML = '<i class="bi bi-clipboard"></i> ສຳເນົາ';
+      btn.style.background = '';
+    }, 2000);
+  });
+}
+
+// Countdown
+let deadline = new Date();
+deadline.setHours(deadline.getHours() + 12, deadline.getMinutes() + 45);
+function updateFlash() {
+  const now = new Date();
+  let diff = Math.max(0, deadline - now) / 1000;
+  const h = Math.floor(diff / 3600); diff %= 3600;
+  const m = Math.floor(diff / 60); 
+  const s = Math.floor(diff % 60);
+  document.getElementById('fs-h').textContent = String(h).padStart(2,'0');
+  document.getElementById('fs-m').textContent = String(m).padStart(2,'0');
+  document.getElementById('fs-s').textContent = String(s).padStart(2,'0');
+}
+updateFlash();
+setInterval(updateFlash, 1000);
+</script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ຕິດຕໍ່ – KickZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<style>
+  *{
+    font-family: 'phetsarath oT', sans-serif;
+  }
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="logo-text">KICK<span class="logo-accent">ZONE</span></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-white fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>ໜ້າຫຼັກ</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html"><i class="bi bi-grid-fill me-1"></i>ສິນຄ້າ</a></li>
+        <li class="nav-item"><a class="nav-link" href="promotion.html"><i class="bi bi-tags-fill me-1"></i>ໂປຣໂມຊັນ</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html"><i class="bi bi-telephone-fill me-1"></i>ຕິດຕໍ່</a></li>
+        <li class="nav-item"><a class="nav-link cart-icon" href="#"><i class="bi bi-bag-fill"></i><span class="cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title">ຕິດຕໍ່ພວກເຮົາ</h1>
+    <p class="page-breadcrumb"><a href="index.html">ໜ້າຫຼັກ</a> / ຕິດຕໍ່</p>
+  </div>
+</div>
+
+<!-- CONTACT INFO CARDS -->
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <div class="col-md-3 col-sm-6">
+        <div class="contact-card text-center">
+          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+          <h6>ໂທລະສັບ</h6>
+          <p>020 99629048</p>
+          <a href="tel:020 99629048" class="btn btn-sm btn-primary-custom">ໂທດຽວນີ້</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="contact-card text-center">
+          <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+          <h6>ອີເມວ</h6>
+          <p>mbivong4@gamil.com</p>
+          <a href="mbivong4@gamil.com" class="btn btn-sm btn-primary-custom">ສົ່ງອີເມວ</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="contact-card text-center">
+          <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <h6>ທີ່ຢູ່ຮ້ານ</h6>
+          <p>ຖະໜົນທ່າເດື່ອ<br/>ວຽງຈັນ, ລາວ</p>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-sm btn-primary-custom">ເປີດແຜນທີ່</a>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="contact-card text-center">
+          <div class="contact-icon"><i class="bi bi-clock-fill"></i></div>
+          <h6>ເວລາເປີດ-ປິດ</h6>
+          <p>ຈັນ – ເສົາ: 08:00-20:00<br/>ອາທິດ: 09:00-18:00</p>
+          <span class="open-badge">ເປີດຢູ່ດຽວນີ້ ✓</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-5">
+      <!-- CONTACT FORM -->
+      <div class="col-lg-6">
+        <div class="form-card">
+          <h3 class="mb-4">ສົ່ງຂໍ້ຄວາມຫາເຮົາ</h3>
+          <div id="formSuccess" class="alert alert-success d-none">
+            <i class="bi bi-check-circle-fill me-2"></i>ສົ່ງຂໍ້ຄວາມສຳເລັດ! ເຮົາຈະຕິດຕໍ່ກັບທ່ານໃນໄວໆນີ້.
+          </div>
+          <div class="mb-3">
+            <label class="form-label">ຊື່ຂອງທ່ານ <span class="text-danger">*</span></label>
+            <input type="text" class="form-control custom-input" id="name" placeholder="ກະລຸນາໃສ່ຊື່"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">ເບີໂທ / ອີເມວ <span class="text-danger">*</span></label>
+            <input type="text" class="form-control custom-input" id="contact" placeholder="020 XXXX XXXX ຫຼື email@example.com"/>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">ຫົວຂໍ້</label>
+            <select class="form-control custom-input" id="subject">
+              <option value="">-- ເລືອກຫົວຂໍ້ --</option>
+              <option>ຖາມລາຄາສິນຄ້າ</option>
+              <option>ສອບຖາມຂໍ້ມູນສິນຄ້າ</option>
+              <option>ສັ່ງສິນຄ້າ</option>
+              <option>ຄຳຕິຊົມ</option>
+              <option>ອື່ນໆ</option>
+            </select>
+          </div>
+          <div class="mb-4">
+            <label class="form-label">ຂໍ້ຄວາມ <span class="text-danger">*</span></label>
+            <textarea class="form-control custom-input" id="message" rows="5" placeholder="ພິມຂໍ້ຄວາມຂອງທ່ານທີ່ນີ້..."></textarea>
+          </div>
+          <button class="btn btn-primary-custom w-100" onclick="sendMessage()">
+            <i class="bi bi-send-fill me-2"></i>ສົ່ງຂໍ້ຄວາມ
+          </button>
+        </div>
+      </div>
+
+      <!-- MAP + SOCIAL -->
+      <div class="col-lg-6">
+        <div class="map-placeholder mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30596.25!2d102.6!3d17.97!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3124698d3d5f9d7b%3A0x1230!2sVientiane!5e0!3m2!1sen!2sla!4v1"
+            width="100%" height="280" style="border:0;border-radius:12px;" allowfullscreen loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="social-contact-grid">
+          <h5 class="mb-3">ຕິດຕໍ່ຜ່ານ Social Media</h5>
+          <div class="row g-3">
+            <div class="col-6">
+              <a href="#" class="social-card fb">
+                <i class="bi bi-facebook"></i>
+                <div>
+                  <strong>Facebook</strong>
+                  <small>Thinnavong Siphachen</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="social-card ig">
+                <i class="bi bi-instagram"></i>
+                <div>
+                  <strong>Instagram</strong>
+                  <small>Thinnavong Siphachen</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="social-card tt">
+                <i class="bi bi-tiktok"></i>
+                <div>
+                  <strong>TikTok</strong>
+                  <small>@thinnavong</small>
+                </div>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="#" class="social-card wa">
+                <i class="bi bi-whatsapp"></i>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <small>020 99629048</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad bg-dark-section">
+  <div class="container">
+    <h2 class="section-title">ຄຳຖາມທີ່ຖາມເລື້ອຍໆ</h2>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="accordion" id="faq1">
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                ຈັດສົ່ງສິນຄ້ານາດໃດ?
+              </button>
+            </h2>
+            <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq1">
+              <div class="accordion-body">ພາຍໃນວຽງຈັນ 1-2 ວັນ. ຕ່າງແຂວງ 3-5 ວັນ. ມີບໍລິການສົ່ງດ່ວນຮອດມື.</div>
+            </div>
+          </div>
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                ສາມາດຄືນສິນຄ້າໄດ້ບໍ?
+              </button>
+            </h2>
+            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq1">
+              <div class="accordion-body">ສາມາດຄືນໄດ້ພາຍໃນ 7 ວັນ ໂດຍສິນຄ້າຕ້ອງຢູ່ໃນສະພາບດີ ບໍ່ຜ່ານການໃຊ້ງານ.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="accordion" id="faq2">
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                ມີການຮັບປະກັນສິນຄ້າບໍ?
+              </button>
+            </h2>
+            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq2">
+              <div class="accordion-body">ສິນຄ້າທຸກໝວດມີການຮັບປະກັນ 3 ເດືອນ ສຳລັບຂໍ້ບົກຜ່ອງຈາກການຜະລິດ.</div>
+            </div>
+          </div>
+          <div class="accordion-item faq-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button faq-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                ຮັບຊຳລະຜ່ານຊ່ອງທາງໃດ?
+              </button>
+            </h2>
+            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq2">
+              <div class="accordion-body">ຮັບເງິນສົດ, BCEL One, LDB, OnePay, ແລະ ໂອນເງິນທຸກທະນາຄານ.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="logo-text mb-3">KICK<span class="logo-accent">ZONE</span></div>
+        <p class="footer-desc">ຮ້ານເກີບຄຸນນະພາບສູງ ຢູ່ວຽງຈັນ ພ້ອມບໍລິການດ້ວຍໃຈ ທຸກວັນ.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h6 class="footer-heading">ລິ້ງ</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">ໜ້າຫຼັກ</a></li>
+          <li><a href="products.html">ສິນຄ້າ</a></li>
+          <li><a href="promotion.html">ໂປຣໂມຊັນ</a></li>
+          <li><a href="contact.html">ຕິດຕໍ່</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຂໍ້ມູນ</h6>
+        <ul class="footer-links">
+          <li><a href="#">ນະໂຍບາຍຄືນສິນຄ້າ</a></li>
+          <li><a href="#">ຂໍ້ກຳນົດການໃຊ້ງານ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຕິດຕໍ່ດ່ວນ</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-telephone me-2"></i>020 9962 9048</li>
+          <li><i class="bi bi-envelope me-2"></i>mbivong4@gamil.com</li>
+          <li><i class="bi bi-geo-alt me-2"></i>ຖະໜົນທ່າເດື່ອ, ວຽງຈັນ</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr"/>
+    <p class="footer-copy">JACK👌✔️. ສະຫງວນລິຂະສິດທຸກຢ່າງ.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+function sendMessage() {
+  const name = document.getElementById('name').value.trim();
+  const contact = document.getElementById('contact').value.trim();
+  const msg = document.getElementById('message').value.trim();
+  if (!name || !contact || !msg) {
+    alert('ກະລຸນາຕື່ມຂໍ້ມູນທີ່ຈຳເປັນໃຫ້ຄົບ');
+    return;
+  }
+  document.getElementById('formSuccess').classList.remove('d-none');
+  document.getElementById('name').value = '';
+  document.getElementById('contact').value = '';
+  document.getElementById('subject').value = '';
+  document.getElementById('message').value = '';
+}
+</script>
+</body>
+</html>

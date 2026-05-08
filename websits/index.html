@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ຮ້ານເກີບ KickZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<style>
+  *{
+    font-family: 'phetsarath oT', sans-serif;
+  }
+</style>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <span class="logo-text">KICK<span class="logo-accent">ZONE</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-white fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link active" href="index.html"><i class="bi bi-house-fill me-1"></i>ໜ້າຫຼັກ</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html"><i class="bi bi-grid-fill me-1"></i>ສິນຄ້າ</a></li>
+        <li class="nav-item"><a class="nav-link" href="promotion.html"><i class="bi bi-tags-fill me-1"></i>ໂປຣໂມຊັນ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-telephone-fill me-1"></i>ຕິດຕໍ່</a></li>
+        <li class="nav-item">
+          <a class="nav-link cart-icon" href="#">
+            <i class="bi bi-bag-fill"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-bg"></div>
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right">
+        <p class="hero-sub">NEW COLLECTION 2026</p>
+        <h1 class="hero-title">ສວຍ. ໄວ.<br/><span class="hero-accent">ທັນສະໄໝ.</span></h1>
+        <p class="hero-desc">ເກີບທີ່ດີທີ່ສຸດ ສຳລັບທຸກໂອກາດ<br/>ດ້ວຍສໄຕລ໌ທີ່ທ່ານຮັກ</p>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="products.html" class="btn btn-primary-custom">ເລືອກຊື້ດຽວນີ້ <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="promotion.html" class="btn btn-outline-custom">ໂປຣໂມຊັນ</a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center hero-img-wrap">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" class="hero-shoe" alt="Hero Shoe"/>
+        <div class="hero-circle"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="row text-center g-3">
+      <div class="col-6 col-md-3">
+        <div class="stat-item"><span class="stat-num">500+</span><br/><span class="stat-label">ລາຍການເກີບ</span></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item"><span class="stat-num">20+</span><br/><span class="stat-label">ແບຣນດັງ</span></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item"><span class="stat-num">10K+</span><br/><span class="stat-label">ລູກຄ້າພໍໃຈ</span></div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="stat-item"><span class="stat-num">5★</span><br/><span class="stat-label">ຄະແນນສະເລ່ຍ</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section-pad">
+  <div class="container">
+    <h2 class="section-title">ໝວດໝູ່ສິນຄ້າ</h2>
+    <p class="section-sub">ຄົ້ນຫາເກີບໃນແບບທີ່ທ່ານຕ້ອງການ</p>
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <a href="products.html" class="cat-card">
+          <div class="cat-icon"><i class="bi bi-lightning-fill"></i></div>
+          <h5>ສະນີກເກີ</h5>
+          <p>120+ ລາຍການ</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="products.html" class="cat-card">
+          <div class="cat-icon"><i class="bi bi-trophy-fill"></i></div>
+          <h5>ເກີບກີລາ</h5>
+          <p>85+ ລາຍການ</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="products.html" class="cat-card">
+          <div class="cat-icon"><i class="bi bi-stars"></i></div>
+          <h5>ເກີບທາງການ</h5>
+          <p>60+ ລາຍການ</p>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="products.html" class="cat-card">
+          <div class="cat-icon"><i class="bi bi-sun-fill"></i></div>
+          <h5>ເກີບລຳລອງ</h5>
+          <p>200+ ລາຍການ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section-pad bg-dark-section">
+  <div class="container">
+    <h2 class="section-title">ສິນຄ້າແນະນຳ</h2>
+    <p class="section-sub">ເກີບຂາຍດີປະຈຳອາທິດ</p>
+    <div class="row g-4">
+      <!-- Product Card -->
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge">ຂາຍດີ</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Nike Air Max"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Nike</span>
+            <h6 class="product-name">Air Max 270</h6>
+            <div class="product-stars">★★★★★</div>
+            <div class="product-price">
+              <span class="price-now">1,290,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge sale">ລົດລາຄາ</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&q=80" alt="Adidas"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Adidas</span>
+            <h6 class="product-name">Ultraboost 22</h6>
+            <div class="product-stars">★★★★☆</div>
+            <div class="product-price">
+              <span class="price-old">1,500,000 ກີບ</span>
+              <span class="price-now">990,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge sale">ລົດລາຄາ</div>
+          <div class="product-img-wrap">
+            <img src="img/WhatsApp Image 2026-05-06 at 21.27.02.jpeg" alt="Adidas"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Adidas</span>
+            <h6 class="product-name">Ultraboost 22</h6>
+            <div class="product-stars">★★★★☆</div>
+            <div class="product-price">
+              <span class="price-old">1,500,000 ກີບ</span>
+              <span class="price-now">990,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge new">ໃໝ່</div>
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&q=80" alt="New Balance"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">New Balance</span>
+            <h6 class="product-name">574 Classic</h6>
+            <div class="product-stars">★★★★★</div>
+            <div class="product-price">
+              <span class="price-now">850,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge new">ໃໝ່</div>
+          <div class="product-img-wrap">
+            <img src="img/WhatsApp Image 2026-05-06 at 21.27.03.jpeg" alt="New Balance"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">New Balance</span>
+            <h6 class="product-name">574 Classic</h6>
+            <div class="product-stars">★★★★★</div>
+            <div class="product-price">
+              <span class="price-now">850,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge new">ໃໝ່</div>
+          <div class="product-img-wrap">
+            <img src="img/WhatsApp Image 2026-05-06 at 21.27.01.jpeg" alt="New Balance"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">New Balance</span>
+            <h6 class="product-name">574 Classic</h6>
+            <div class="product-stars">★★★★★</div>
+            <div class="product-price">
+              <span class="price-now">850,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-badge new">ໃໝ່</div>
+          <div class="product-img-wrap">
+            <img src="img/WhatsApp Image 2026-05-06 at 21.27.04 (1).jpeg" alt="New Balance"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">New Balance</span>
+            <h6 class="product-name">574 Classic</h6>
+            <div class="product-stars">★★★★★</div>
+            <div class="product-price">
+              <span class="price-now">850,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80" alt="Puma"/>
+            <div class="product-actions">
+              <button class="act-btn" title="ເພີ່ມໃສ່ກະຕ່າ" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+              <button class="act-btn" title="ຖືກໃຈ"><i class="bi bi-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-brand">Puma</span>
+            <h6 class="product-name">RS-X Reinvention</h6>
+            <div class="product-stars">★★★★☆</div>
+            <div class="product-price">
+              <span class="price-now">780,000 ກີບ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <a href="products.html" class="btn btn-primary-custom">ເບິ່ງທັງໝົດ <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNER -->
+<section class="promo-banner">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <p class="promo-label">ໂປຣໂມຊັນພິເສດ</p>
+        <h2>ສ່ວນລົດ <span class="highlight">30%</span><br/>ສຳລັບສິນຄ້າທຸກໝວດ!</h2>
+        <p class="promo-desc">ໃຊ້ໂຄດ <strong>KICK30</strong> ເມື່ອຊໍາລະ • ຈຳກັດ 100 ສິດທິ</p>
+        <a href="promotion.html" class="btn btn-primary-custom mt-2">ເບິ່ງໂປຣໂມຊັນທັງໝົດ</a>
+      </div>
+      <div class="col-lg-5 text-center">
+        <div class="countdown-box">
+          <p class="cd-label">ຫມົດເວລາໃນ</p>
+          <div class="countdown" id="countdown">
+            <div class="cd-item"><span id="cd-h">00</span><small>ຊົ່ວໂມງ</small></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span id="cd-m">00</span><small>ນາທີ</small></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-item"><span id="cd-s">00</span><small>ວິນາທີ</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="section-pad">
+  <div class="container">
+    <h2 class="section-title">ແບຣນທີ່ຮ່ວມມື</h2>
+    <div class="brands-row">
+      <span>NIKE</span><span>ADIDAS</span><span>PUMA</span><span>NEW BALANCE</span><span>CONVERSE</span><span>VANS</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="logo-text mb-3">KICK<span class="logo-accent">ZONE</span></div>
+        <p class="footer-desc">ຮ້ານເກີບຄຸນນະພາບສູງ ຢູ່ວຽງຈັນ ພ້ອມບໍລິການດ້ວຍໃຈ ທຸກວັນ.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+          <a href="#"><i class="bi bi-line"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h6 class="footer-heading">ລິ້ງ</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">ໜ້າຫຼັກ</a></li>
+          <li><a href="products.html">ສິນຄ້າ</a></li>
+          <li><a href="promotion.html">ໂປຣໂມຊັນ</a></li>
+          <li><a href="contact.html">ຕິດຕໍ່</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຂໍ້ມູນ</h6>
+        <ul class="footer-links">
+          <li><a href="#">ນະໂຍບາຍຄືນສິນຄ້າ</a></li>
+          <li><a href="#">ຂໍ້ກຳນົດການໃຊ້ງານ</a></li>
+          <li><a href="#">ນະໂຍບາຍຄວາມເປັນສ່ວນຕົວ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຕິດຕໍ່ດ່ວນ</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-telephone me-2"></i>020 9962 9048</li>
+          <li><i class="bi bi-envelope me-2"></i>mbivong4@gamil.com</li>
+          <li><i class="bi bi-clock me-2"></i>08:00 – 20:00 ທຸກວັນ</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr"/>
+    <p class="footer-copy">. ສະຫງວນລິຂະສິດທຸກຢ່າງ.</p>
+  </div>
+</footer>
+
+<!-- TOAST -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cartToast" class="toast align-items-center" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-bag-check-fill me-2 text-success"></i>ເພີ່ມສິນຄ້າໃສ່ກະຕ່າແລ້ວ!</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

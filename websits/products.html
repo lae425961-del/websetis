@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ສິນຄ້າ – KickZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<style>
+  *{
+    font-family: 'phetsarath oT', sans-serif;
+  }
+</style>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="logo-text">KICK<span class="logo-accent">ZONE</span></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-white fs-2"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house-fill me-1"></i>ໜ້າຫຼັກ</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html"><i class="bi bi-grid-fill me-1"></i>ສິນຄ້າ</a></li>
+        <li class="nav-item"><a class="nav-link" href="promotion.html"><i class="bi bi-tags-fill me-1"></i>ໂປຣໂມຊັນ</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-telephone-fill me-1"></i>ຕິດຕໍ່</a></li>
+        <li class="nav-item"><a class="nav-link cart-icon" href="#"><i class="bi bi-bag-fill"></i><span class="cart-count">0</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <h1 class="page-title">ສິນຄ້າທັງໝົດ</h1>
+    <p class="page-breadcrumb"><a href="index.html">ໜ້າຫຼັກ</a> / ສິນຄ້າ</p>
+  </div>
+</div>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="row g-4">
+      <!-- SIDEBAR -->
+      <div class="col-lg-3">
+        <div class="filter-box">
+          <h5 class="filter-title"><i class="bi bi-funnel-fill me-2"></i>ກັ່ນຕອງ</h5>
+          
+          <div class="filter-group">
+            <h6>ໝວດໝູ່</h6>
+            <div class="form-check"><input class="form-check-input" type="checkbox" checked id="f1"><label class="form-check-label" for="f1">ສະນີກເກີ (120)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="f2"><label class="form-check-label" for="f2">ເກີບກີລາ (85)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="f3"><label class="form-check-label" for="f3">ເກີບທາງການ (60)</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="f4"><label class="form-check-label" for="f4">ເກີບລຳລອງ (200)</label></div>
+          </div>
+
+          <div class="filter-group">
+            <h6>ແບຣນ</h6>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="b1"><label class="form-check-label" for="b1">Nike</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="b2"><label class="form-check-label" for="b2">Adidas</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="b3"><label class="form-check-label" for="b3">Puma</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="b4"><label class="form-check-label" for="b4">New Balance</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="b5"><label class="form-check-label" for="b5">Converse</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="b6"><label class="form-check-label" for="b6">Vans</label></div>
+          </div>
+
+          <div class="filter-group">
+            <h6>ໄຊ</h6>
+            <div class="size-grid">
+              <button class="size-btn active">38</button>
+              <button class="size-btn">39</button>
+              <button class="size-btn">40</button>
+              <button class="size-btn">41</button>
+              <button class="size-btn">42</button>
+              <button class="size-btn">43</button>
+              <button class="size-btn">44</button>
+              <button class="size-btn">45</button>
+            </div>
+          </div>
+          <button class="btn btn-primary-custom w-100 mt-3">ນຳໃຊ້ການກັ່ນຕອງ</button>
+        </div>
+      </div>
+
+      <!-- PRODUCTS GRID -->
+      <div class="col-lg-9">
+        <!-- Sort Bar -->
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+          <p class="mb-0"> ລາຍການ</p>
+          <div class="d-flex gap-2 align-items-center">
+            <select class="form-select form-select-sm sort-select">
+              <option>ຈັດລຽງ: ຂາຍດີ</option>
+              <option>ລາຄາ: ຕ່ຳ - ສູງ</option>
+              <option>ລາຄາ: ສູງ - ຕ່ຳ</option>
+              <option>ໃໝ່ລ່າສຸດ</option>
+            </select>
+            <button class="view-btn active" id="gridView"><i class="bi bi-grid-fill"></i></button>
+            <button class="view-btn" id="listView"><i class="bi bi-list-ul"></i></button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="productsContainer">
+          <!-- Product 1 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-badge">ຂາຍດີ</div>
+              <div class="product-img-wrap">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Nike</span>
+                <h6 class="product-name">Air Max 270</h6>
+                <div class="product-stars">★★★★★</div>
+                <div class="product-price"><span class="price-now">1,290,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-badge sale">-34%</div>
+              <div class="product-img-wrap">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=400&q=80" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Ultraboost 22</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price">
+                  <span class="price-old">1,500,000 ກີບ</span>
+                  <span class="price-now">990,000 ກີບ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-badge new">ໃໝ່</div>
+              <div class="product-img-wrap">
+                <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=400&q=80" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">New Balance</span>
+                <h6 class="product-name">574 Classic</h6>
+                <div class="product-stars">★★★★★</div>
+                <div class="product-price"><span class="price-now">850,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=400&q=80" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Puma</span>
+                <h6 class="product-name">RS-X Reinvention</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">780,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 5 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-badge sale">-20%</div>
+              <div class="product-img-wrap">
+                <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=400&q=80" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Nike</span>
+                <h6 class="product-name">React Infinity Run</h6>
+                <div class="product-stars">★★★★★</div>
+                <div class="product-price">
+                  <span class="price-old">1,200,000 ກີບ</span>
+                  <span class="price-now">960,000 ກີບ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Product 6 -->
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=400&q=80" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.04.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Air Jordan 1Low G Spiked</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">750,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.05 (1).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.06.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Air Jordan 1Retro High OGFlight Club</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">950,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.05.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Air Jordan 1Mid</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">750,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.07 (1).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Air Jordan 1Low SE</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">675,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.06 (1).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.23.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.23 (1).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Nike Juniper Trail 3</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">850,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.07 (2).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.26 (2).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.28.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.29 (1).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.31.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Air Jordan 1Low G</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">850,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-07 at 08.17.26 (1).jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img src="img/WhatsApp Image 2026-05-06 at 21.27.02.jpeg" alt=""/>
+                <div class="product-actions">
+                  <button class="act-btn" onclick="addToCart(this)"><i class="bi bi-bag-plus"></i></button>
+                  <button class="act-btn"><i class="bi bi-heart"></i></button>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="product-brand">Adidas</span>
+                <h6 class="product-name">Stan Smith Original</h6>
+                <div class="product-stars">★★★★☆</div>
+                <div class="product-price"><span class="price-now">650,000 ກີບ</span></div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+
+        <!-- Pagination -->
+        <nav class="mt-5">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled"><a class="page-link" href="#">«</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">»</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="logo-text mb-3">KICK<span class="logo-accent">ZONE</span></div>
+        <p class="footer-desc">ຮ້ານເກີບຄຸນນະພາບສູງ ຢູ່ວຽງຈັນ ພ້ອມບໍລິການດ້ວຍໃຈ ທຸກວັນ.</p>
+        <div class="social-icons mt-3">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h6 class="footer-heading">ລິ້ງ</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">ໜ້າຫຼັກ</a></li>
+          <li><a href="products.html">ສິນຄ້າ</a></li>
+          <li><a href="promotion.html">ໂປຣໂມຊັນ</a></li>
+          <li><a href="contact.html">ຕິດຕໍ່</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຂໍ້ມູນ</h6>
+        <ul class="footer-links">
+          <li><a href="#">ນະໂຍບາຍຄືນສິນຄ້າ</a></li>
+          <li><a href="#">ຂໍ້ກຳນົດການໃຊ້ງານ</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="footer-heading">ຕິດຕໍ່ດ່ວນ</h6>
+        <ul class="footer-links">
+          <li><i class="bi bi-telephone me-2"></i>020 9962 9048</li>
+          <li><i class="bi bi-envelope me-2"></i>mbivong4@gamil.com</li>
+          <li><i class="bi bi-geo-alt me-2"></i>ຖະໜົນທ່າເດື່ອ, ວຽງຈັນ</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-hr"/>
+    <p class="footer-copy"> JACK👌✔️. ສະຫງວນລິຂະສິດທຸກຢ່າງ.</p>
+  </div>
+</footer>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cartToast" class="toast align-items-center" role="alert">
+    <div class="d-flex">
+      <div class="toast-body"><i class="bi bi-bag-check-fill me-2 text-success"></i>ເພີ່ມສິນຄ້າໃສ່ກະຕ່າແລ້ວ!</div>
+      <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+<script>
+function updatePrice(val) {
+  const formatted = parseInt(val).toLocaleString('lo-LA');
+  document.getElementById('priceVal').textContent = formatted + ' ກີບ';
+}
+document.querySelectorAll('.size-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
